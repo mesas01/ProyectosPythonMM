@@ -51,7 +51,7 @@ def get_all_pokemons():
         all_pokemons = []
         for index in range(151):
             all_pokemons.append(get_pokemon(index + 1))
-            print("*",end="")
+            print("*", end="")
 
         with open("pokeFile.pkl", "wb") as pokeFile:
             pickle.dump(all_pokemons, pokeFile)
